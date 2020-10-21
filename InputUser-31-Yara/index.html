@@ -1,0 +1,78 @@
+<!-- BUAT FOLDER DULU FIR -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <style>
+        *{
+            font-family: 'Comic Sans', cursive;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>XI RPL 1 / 31</h1>
+    <h2>Pendaftaran hiGirls!</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Nama Lengkap</td>
+                    <td>:</td>
+                    <td><input type="text" id="nama" placeholder="Tuliskan Nama" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>:</td>
+                    <td><input type="email" id="email" placeholder="Masukan Email" required></td>
+                </tr>
+                <tr>
+                    <td>Negara</td>
+                    <td>:</td>
+                    <td>
+                        <select name="negara" id="negara">
+                            <option value="Indonesia" selected>Indonesia</option>
+                            <option value="Amerika Serikat">Amerika Serikat</option>
+                            <option value="Singapura">Singapura</option>
+                            <option value="Australia">Australia</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tahun Lahir</td>
+                    <td>:</td>
+                    <td>
+                        <select id="tahun">
+                            <option value="2000" selected>2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin</td>
+                    <td>:</td>
+                    <td>
+						<input type="radio" id="jk" name="gender" value="Pria">Pria<br>
+						<input type="radio" id="jk" name="gender" value="Wanita">Wanita<br>
+						<input type="radio" id="jk" name="gender" value="Tidak Terdefinisi">Tidak Terdefinisi
+					</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="sub()">Submit</button>
+        <div id="hem">
+            
+        </div>
+</body>
+</html>
